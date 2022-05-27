@@ -1,5 +1,5 @@
 <template>
-    <v-col class="pa-1">
+    <v-col class="pa-3">
         <v-row class="pa-0 mx-4">
             <v-col cols='2' class="pa-0 ma-0">
                 <v-select solo dense class="pa-0 ma-0" :items='saveBox' v-model="saveBoxSelect"></v-select>
@@ -10,7 +10,7 @@
                 <Card color="red" full-header>
                 <template #heading>
                     <div class="pa-5 white--text">
-                    <div class="text-h4 font-weight-light">
+                    <div class="text-h5 font-weight-light">
                         HV
                     </div>
                     <div class="text-caption">
@@ -36,7 +36,7 @@
                 <Card color="blue" full-header>
                     <template #heading>
                         <div class="pa-5 white--text">
-                        <div class="text-h4 font-weight-light">
+                        <div class="text-h5 font-weight-light">
                             PCS
                         </div>
                         <div class="text-caption">
@@ -62,7 +62,7 @@
                 <Card color="green" full-header>
                     <template #heading>
                         <div class="pa-5 white--text">
-                        <div class="text-h4 font-weight-light">
+                        <div class="text-h5 font-weight-light">
                             BESS
                         </div>
                         <div class="text-caption">

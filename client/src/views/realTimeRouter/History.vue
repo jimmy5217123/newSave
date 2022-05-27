@@ -1,5 +1,5 @@
 <template>
-    <v-col class="pa-1">
+    <v-col class="pa-3">
         <v-row class="pa-0 mx-4">
             <v-col cols='2' class="pa-0 ma-0">
                 <v-select solo dense class="pa-0 ma-0" :items='deciveBox' v-model="deciveBoxSelect"></v-select>
