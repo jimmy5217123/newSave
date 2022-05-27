@@ -26,7 +26,7 @@
         <v-divider></v-divider>
 
         <v-list dense>
-          <v-list-item v-for="item in items" :key="item.title" link class="mx-1">
+          <v-list-item v-for="item in items" :key="item.title" :to="item.link" link class="mx-1">
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
@@ -56,7 +56,7 @@ export default Vue.extend({
     return {
       drawer: true,
       items: [
-        { title: '案場資訊', icon: 'mdi-home-city' },
+        { title: '即時資訊', icon: 'mdi-home-city', link: '/' },
         { title: 'My Account', icon: 'mdi-account' },
         { title: 'Users', icon: 'mdi-account-group-outline' },
       ]

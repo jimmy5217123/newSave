@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <v-card class="mx-5 my-5 cardBox" outlined elevation="2" v-for="x in 7" :key="x" @click="toInfoPage">
+  <div class="mx-5">
+    <div>
+      <v-text-field style="width:200px" label="search 案場">
+        <v-icon slot="append" color="red">
+          mdi-magnify
+        </v-icon>
+      </v-text-field>
+    </div>
+    <v-card class="mb-5 cardBox" outlined elevation="2" v-for="x in 20" :key="x" @click="toInfoPage">
       <table style="width: 100%">
         <tr>
           <th v-for="i in factoryData" :key="i">{{i}}</th>
