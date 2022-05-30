@@ -10,7 +10,7 @@
           prepend-inner-icon="mdi-magnify"
         ></v-text-field>
       </div>
-      <div class="mx-10">資料筆數: 22</div>
+      <div class="mx-10" style="font-weight:700">資料筆數: 22</div>
       <div style="margin-left:auto">
         <div style="font-weight:700">
           <span class="mx-0">排程狀態:</span>
