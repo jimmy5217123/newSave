@@ -17,7 +17,7 @@
 
     </v-app-bar>
     <v-row class="my-auto">
-      <v-navigation-drawer v-model="drawer" permanent expand-on-hover>
+      <v-navigation-drawer v-model="drawer" permanent expand-on-hover style="background:#D0E9FF">
         <v-list-item class="px-2">
           <v-list-item-avatar>
           </v-list-item-avatar>

@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import VueHighcharts from 'vue-highcharts'
 
 Vue.config.productionTip = false
+Vue.use(VueHighcharts)
 
 new Vue({
   router,

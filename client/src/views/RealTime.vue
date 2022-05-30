@@ -1,11 +1,14 @@
 <template>
   <div class="mx-5">
-    <div>
-      <v-text-field style="width:200px" label="search 案場">
-        <v-icon slot="append" color="red">
-          mdi-magnify
-        </v-icon>
-      </v-text-field>
+    <div style="display:flex;align-items:center">
+      <div style="width:200px">
+        <v-text-field label="search 案場">
+          <v-icon slot="append" color="red">
+            mdi-magnify
+          </v-icon>
+        </v-text-field>
+      </div>
+      <div class="mx-10">資料筆數: 22</div>
     </div>
     <v-card class="mb-5 cardBox" outlined elevation="2" v-for="x in 20" :key="x" @click="toInfoPage">
       <table style="width: 100%">
