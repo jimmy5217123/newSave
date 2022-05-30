@@ -1,7 +1,7 @@
 <template>
   <div class="mx-5">
     <div style="display:flex; align-items:center" class="mt-2">
-      <div style="width:600px;max-height:50px">
+      <div style="width:30%;max-height:50px">
         <v-text-field
           placeholder="儲能案場"
           filled
