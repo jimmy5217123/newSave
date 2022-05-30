@@ -126,7 +126,7 @@
                                         <td>60A</td>
                                     </tr>
                                     <tr>
-                                        <td>1000KW</td>
+                                        <td>32.0  °C </td>
                                     </tr>
                                 </tbody>
                             </template>
