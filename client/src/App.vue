@@ -24,7 +24,7 @@
           </template>
   
           <v-list>
-            <v-list-item v-for="item in items" :key="item.title" :to="item.link" @click="() => {}">
+            <v-list-item dense v-for="item in items" :key="item.title" :to="item.link">
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-icon>
@@ -83,8 +83,8 @@ export default Vue.extend({
       drawer: true,
       items: [
         { title: '即時資訊', icon: 'mdi-home-city', link: '/' },
-        { title: 'My Account', icon: 'mdi-account' },
-        { title: 'Users', icon: 'mdi-account-group-outline' },
+        { title: 'My Account', icon: 'mdi-account', link: '/s' },
+        { title: 'Users', icon: 'mdi-account-group-outline', link: '/a' },
       ]
     }
   },
