@@ -1,12 +1,14 @@
 <template>
   <div class="mx-5">
-    <div style="display:flex; align-items:center">
-      <div style="width:200px">
-        <v-text-field label="search 案場">
-          <v-icon slot="append" color="red">
-            mdi-magnify
-          </v-icon>
-        </v-text-field>
+    <div style="display:flex; align-items:center" class="mt-2">
+      <div style="width:600px;max-height:50px">
+        <v-text-field
+          placeholder="儲能案場"
+          filled
+          rounded
+          dense
+          prepend-inner-icon="mdi-magnify"
+        ></v-text-field>
       </div>
       <div class="mx-10">資料筆數: 22</div>
       <div style="margin-left:auto">
