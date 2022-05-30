@@ -16,9 +16,25 @@
 
       <v-spacer></v-spacer>
       <div>
-        <v-btn icon @click="test">
-          <v-icon>mdi-dots-grid</v-icon>
-        </v-btn>
+        <v-menu left bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn icon v-bind="attrs" v-on="on">
+              <v-icon>mdi-dots-grid</v-icon>
+            </v-btn>
+          </template>
+  
+          <v-list>
+            <v-list-item v-for="item in items" :key="item.title" :to="item.link" @click="() => {}">
+              <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-menu>
         <v-btn icon>
           <v-icon>mdi-account</v-icon>
         </v-btn>
