@@ -44,7 +44,7 @@
         items: [
           { title: '案場資訊', icon: 'mdi-view-dashboard', to: '', name: 'info'},
           { title: '裝置歷史資料', icon: 'mdi-image', to: 'history', name: 'history'},
-          { title: '資料分析', icon: 'mdi-help-box', to: 'analysis', name: 'analysis' },
+          { title: '資料分析', icon: 'mdi-help-box', to: 'analysis', name: 'analysis' }
         ]
       }
     },

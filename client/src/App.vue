@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
+
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -14,8 +15,17 @@
       </div>
 
       <v-spacer></v-spacer>
+      <div>
+        <v-btn icon @click="test">
+          <v-icon>mdi-dots-grid</v-icon>
+        </v-btn>
+        <v-btn icon>
+          <v-icon>mdi-account</v-icon>
+        </v-btn>
+      </div>
 
     </v-app-bar>
+
     <v-row class="my-auto">
       <v-navigation-drawer v-model="drawer" permanent expand-on-hover style="background:#D0E9FF">
         <v-list-item class="px-2">
@@ -24,7 +34,7 @@
         </v-list-item>
 
         <v-divider></v-divider>
-
+        
         <v-list dense>
           <v-list-item v-for="item in items" :key="item.title" :to="item.link" link class="mx-1">
             <v-list-item-icon>
@@ -62,5 +72,10 @@ export default Vue.extend({
       ]
     }
   },
+  methods: {
+    test () {
+      this.$router.push('/')
+    }
+  }
 });
 </script>

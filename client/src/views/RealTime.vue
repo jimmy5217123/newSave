@@ -75,7 +75,6 @@
   table th {
     padding: 2px;
     text-align: center;
-    background-color: #97cec2;
     text-shadow: 2px 2px #316fae;
     background: linear-gradient(180deg,#3b679e,#207cca 8%,#2b88d9 18%,#207cca 31%,#7db9e8);
     color: #fff;
@@ -84,5 +83,6 @@
   table td {
     padding: 2px;
     text-align: center;
+    font-weight: 700;
   }
 </style>

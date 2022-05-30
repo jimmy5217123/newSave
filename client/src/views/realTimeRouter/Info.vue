@@ -33,6 +33,32 @@
                 </Card>
             </v-col>
             <v-col cols='4'>
+                <Card color="red" full-header>
+                <template #heading>
+                    <div class="pa-5 white--text">
+                    <div class="text-h5 font-weight-light">
+                        HV
+                    </div>
+                    <div class="text-caption">
+                        2022/5/10
+                    </div>
+                    </div>
+                </template>
+                <v-card-text>
+                    <v-simple-table>
+                        <template v-slot:default>
+                            <tbody>
+                            <tr v-for="item in HVdata" :key="item.key">
+                                <td>{{ item.key }}</td>
+                                <td>{{ item.value }}</td>
+                            </tr>
+                            </tbody>
+                        </template>
+                    </v-simple-table>
+                </v-card-text>
+                </Card>
+            </v-col>
+            <v-col cols='4'>
                 <Card color="blue" full-header>
                     <template #heading>
                         <div class="pa-5 white--text">
