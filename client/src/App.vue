@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app dark src="@/assets/bar.jpg">
 
       <div class="d-flex align-center">
         <v-img
@@ -44,7 +44,7 @@
     </v-app-bar>
 
     <v-row class="my-auto">
-      <v-navigation-drawer v-model="drawer" permanent expand-on-hover style="background:#D0E9FF">
+      <v-navigation-drawer v-model="drawer" permanent expand-on-hover dark src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg">
         <v-list-item class="px-2">
           <v-list-item-avatar>
           </v-list-item-avatar>
