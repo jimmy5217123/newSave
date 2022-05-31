@@ -36,8 +36,9 @@
 </div>
 </template>
 
-<script>
-  export default {
+<script lang="ts">
+import Vue from 'vue'
+  export default Vue.extend({
     name: 'RealTime',
     data () {
       return {
@@ -49,25 +50,25 @@
         ]
       }
     },
-    created () {
-      this.siteName = this.$router.history.current.query.siteName
+    created (): void {
+      this.siteName = ( this.$router as any ).history.current.query.siteName
     },
     methods: {
-      ChangeRouter (to) {
-        this.$router.push({ path: `/realTimeRouter/${to}`, query: this.$router.history.current.query}).catch(err => {err})
+      ChangeRouter (to: string) {
+        ( this.$router as any ).push({ path: `/realTimeRouter/${to}`, query: ( this.$router as any ).history.current.query}).catch(err => {err})
       }
     },
     computed: {
       routerName: {
-        get() {
-          return this.items.findIndex(x => x.name === this.$router.history.current.name)
+        get() : number {
+          return this.items.findIndex(x => x.name === ( this.$router as any ).history.current.name)
         },
-        set () {
-          return this.items.findIndex(x => x.name === this.$router.history.current.name)
+        set (): number {
+          return this.items.findIndex(x => x.name === ( this.$router as any ).history.current.name)
         } 
       }
     }
-  }
+  })
 </script>
 <style lang="scss" scoped>
 
