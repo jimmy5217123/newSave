@@ -60,7 +60,7 @@ import Vue from 'vue'
     },
     computed: {
       routerName: {
-        get() : number {
+        get () : number {
           return this.items.findIndex(x => x.name === ( this.$router as any ).history.current.name)
         },
         set (): number {
