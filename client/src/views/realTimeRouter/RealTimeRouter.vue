@@ -2,13 +2,13 @@
 <div id="app">
     <v-row class="ma-0">
         <v-card height="90vh" width="256">
-          <v-navigation-drawer permanent class="light-blue lighten-5">
-            <v-list-item>
+          <v-navigation-drawer permanent>
+            <v-list-item class="light-blue lighten-5">
               <v-list-item-content>
-                <v-list-item-title class="text-h6">
+                <v-list-item-title>
                   {{siteName}}
                 </v-list-item-title>
-                <v-list-item-subtitle>
+                <v-list-item-subtitle class="text-subtitle-2">
                   啟用日期: 2022/05/31
                 </v-list-item-subtitle>
               </v-list-item-content>
