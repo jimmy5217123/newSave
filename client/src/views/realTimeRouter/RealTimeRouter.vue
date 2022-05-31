@@ -1,15 +1,15 @@
 <template>
 <div id="app">
     <v-row class="ma-0">
-        <v-card height="200px" width="256">
-          <v-navigation-drawer permanent>
+        <v-card height="90vh" width="256">
+          <v-navigation-drawer permanent class="light-blue lighten-5">
             <v-list-item>
               <v-list-item-content>
                 <v-list-item-title class="text-h6">
-                  Application
+                  {{siteName}}
                 </v-list-item-title>
                 <v-list-item-subtitle>
-
+                  啟用日期: 2022/05/31
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -41,12 +41,16 @@
     name: 'RealTime',
     data () {
       return {
+        siteName: '',
         items: [
           { title: '案場資訊', icon: 'mdi-view-dashboard', to: '', name: 'info'},
           { title: '裝置歷史資料', icon: 'mdi-image', to: 'history', name: 'history'},
           { title: '資料分析', icon: 'mdi-help-box', to: 'analysis', name: 'analysis' }
         ]
       }
+    },
+    created () {
+      this.siteName = this.$router.history.current.query.siteName
     },
     methods: {
       ChangeRouter (to) {
@@ -62,7 +66,7 @@
           return this.items.findIndex(x => x.name === this.$router.history.current.name)
         } 
       }
-    },
+    }
   }
 </script>
 <style lang="scss" scoped>

@@ -35,9 +35,10 @@
             </v-list-item>
           </v-list>
         </v-menu>
-        <v-btn icon>
+        <!-- <v-btn icon>
           <v-icon>mdi-account</v-icon>
-        </v-btn>
+        </v-btn> -->
+        JimmyLin
       </div>
 
     </v-app-bar>
