@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <v-card class="mb-5 cardBox" outlined elevation="2" v-for="x in 20" :key="x" @click="toInfoPage">
+    <v-card class="mb-5 cardBox" outlined elevation="2" v-for="x in 7" :key="x" @click="toInfoPage">
       <table style="width: 100%">
         <tr>
           <th v-for="i in factoryDataTitle" :key="i">{{i}}</th>
