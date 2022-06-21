@@ -89,6 +89,12 @@ export default {
                     data: [680, 680, 680, 680, 680, 680, 680, 680, 680, 680, 680, 680],
                     yAxis: 0,
                     visible: true
+                },
+                {
+                    name: '頻率',
+                    data: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
+                    yAxis: 0,
+                    visible: true
                 }],
                 responsive: {
                     rules: [
