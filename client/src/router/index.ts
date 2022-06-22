@@ -25,7 +25,12 @@ const routes: Array<RouteConfig> = [
         path: 'history',
         name: 'history',
         component: () => import(`../views/realTimeRouter/History.vue`)
-      }
+      },
+      {
+        path: 'dataanalyze',
+        name: 'dataanalyze',
+        component: () => import(`../views/realTimeRouter/DataAnalyze.vue`)
+      },
     ]
   }
 ]
